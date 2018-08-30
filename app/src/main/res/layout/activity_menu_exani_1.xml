@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    tools:context="com.example.armin.educativasim.menu_exani_1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content">
+
+
+                        <ImageButton
+                          android:layout_marginTop="15dp"
+                            android:id="@+id/btn_seccion_exani1"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_height="120dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@drawable/cuaderno" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Estudio por secciones"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+
+            android:id="@+id/btn_practicas_exani1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+
+            android:src="@drawable/branding" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Didáctico Práctico"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/btn_simulacion_exani1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/prueba" />
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Simulador de Examen"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

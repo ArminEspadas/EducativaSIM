@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/wood1"
+    android:layout_height="match_parent"
+    tools:context="com.example.armin.educativasim.Activity_pregunta">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+           android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_left"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:layout_marginTop="10dp"
+            android:text="Sección:   "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_seccion"
+
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:text="Pensamiento Matemático"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_right"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+       <EditText
+           android:gravity="center"
+           android:id="@+id/txt_pregunta"
+            android:textColor="#FFFFFF"
+            android:editable="false"
+           android:inputType=""
+           android:layout_width="match_parent"
+           android:textStyle="italic|bold"
+           android:text="El 7% de 1320 es: "
+           android:layout_height="200dp" />
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_a"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="A) "
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:hint=" 0.92"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_b"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="B) "
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:hint=" 92.40"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_c"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="C) "
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:hint="924.0"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_d"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="D) "
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:hint=" 9240"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
