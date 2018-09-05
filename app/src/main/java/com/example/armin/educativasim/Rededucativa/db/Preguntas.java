@@ -11,13 +11,15 @@ public final class Preguntas {
     int category_id;
     String descripcion;
     int imagen;
+    String name_img;
 
-    public Preguntas(int id, int curso_id, int category_id, String descripcion, int imagen) {
+    public Preguntas(int id, int curso_id, int category_id, String descripcion, int imagen, String name_img) {
         this.id = id;
         this.curso_id = curso_id;
         this.category_id = category_id;
         this.descripcion = descripcion;
         this.imagen = imagen;
+        this.name_img = name_img;
     }
 
     public int getId() {
@@ -60,5 +62,11 @@ public final class Preguntas {
         this.imagen = imagen;
     }
 
+    public String getName_img() {
+        return name_img;
+    }
 
+    public void setName_img(String name_img) {
+        this.name_img = name_img;
+    }
 }

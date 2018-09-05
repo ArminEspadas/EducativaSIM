@@ -22,7 +22,8 @@ CREATE TABLE IF NOT EXISTS [usuarios](
     [curso_id]    INTEGER NOT NULL REFERENCES curso([id]),
     [category_id] INTEGER NOT NULL REFERENCES categorias([id]),
     [descripcion] TEXT NOT NULL,
-    [imagen]       INTEGER NOT NULL);
+    [imagen]       INTEGER NOT NULL,
+    [name_img] TEXT NOT NULL);
 
       CREATE TABLE IF NOT EXISTS [respuestas](
     [id] INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -33,6 +34,7 @@ CREATE TABLE IF NOT EXISTS [usuarios](
        CREATE TABLE IF NOT EXISTS [opciones](
     [id] INTEGER PRIMARY KEY,
     [pregunta_id]    INTEGER NOT NULL REFERENCES preguntas([id]),
+    [img_status] INTEGER NOT NULL,
     [opcion_a] TEXT NOT NULL,
     [imagen_a_id] TEXT NOT NULL,
     [opcion_b] TEXT NOT NULL,

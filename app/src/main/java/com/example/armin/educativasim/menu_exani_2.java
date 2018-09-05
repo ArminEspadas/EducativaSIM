@@ -1,22 +1,22 @@
 package com.example.armin.educativasim;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class menu_exani_1 extends AppCompatActivity {
+/**
+ * Created by armin on 04/09/2018.
+ */
+
+public final class menu_exani_2 extends AppCompatActivity {
+
 
     private ImageButton btn_secciones, btn_practica, btn_simulacion;
     private int request_code=1, request_code2=2;
-    public static String EXANI_1="EXANI_I";
 
 
     @Override
@@ -34,7 +34,7 @@ public class menu_exani_1 extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent i = new Intent(getApplicationContext(), secciones_exani.class);
-                i.putExtra(menu_exani_1.EXANI_1, 1 );
+                i.putExtra(menu_exani_1.EXANI_1, 2 );
                 startActivityForResult(i, request_code);
 
             }
@@ -45,7 +45,7 @@ public class menu_exani_1 extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent i = new Intent(getApplicationContext(), Activity_pregunta.class);
-                i.putExtra(menu_exani_1.EXANI_1, 1 );
+                i.putExtra(menu_exani_1.EXANI_1, 2 );
                 startActivityForResult(i, request_code2);
 
             }
@@ -68,7 +68,7 @@ public class menu_exani_1 extends AppCompatActivity {
 
 
         super.onBackPressed();
-      //  moveTaskToBack(true);
+        //  moveTaskToBack(true);
     }
 
 
@@ -79,5 +79,8 @@ public class menu_exani_1 extends AppCompatActivity {
 
 
     }
+
+
+
 
 }

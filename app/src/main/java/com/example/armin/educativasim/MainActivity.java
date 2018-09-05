@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         List<Cursos> user_to_profiles= inventory.getAllCursos();
 
 
-        Toast.makeText(getApplicationContext(), user_to_profiles.get(9).getName_Course() , Toast.LENGTH_LONG).show();
+      //  Toast.makeText(getApplicationContext(), user_to_profiles.get(9).getName_Course() , Toast.LENGTH_LONG).show();
 
         //-------------------------------------------------------------------------
 
@@ -50,6 +50,20 @@ public class MainActivity extends AppCompatActivity {
         //-------------------------------------------------------------------------
 
 
+        //-------------------------------------------------------------------------
+
+        btn_exani2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent_exani2= new Intent(getApplicationContext(), menu_exani_2.class);
+                startActivityForResult(intent_exani2, 2 );
+
+
+            }
+        });
+
+        //-------------------------------------------------------------------------
 
 
 
